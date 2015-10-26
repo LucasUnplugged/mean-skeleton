@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>MEAN Stack Skeleton</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/angular-route/angular-route.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="components/components.min.js"></script>
+	<script src="shared/shared.min.js"></script>
+	<script src="app.min.js"></script>
+</head>
+<body ng-controller="mainController">
+	<article class="container">
+
+		<!-- HEADER -->
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">MEAN Stack Skeleton</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/samples">sampleData</a></li>
+			</ul>
+		</nav>
+
+		<!-- ANGULAR DYNAMIC CONTENT -->
+		<section ng-view></section>
+
+	</article>
+
+	<script type='text/javascript' id="__bs_script__">
+		//<![CDATA[
+		if ( window.location.host.indexOf( 'localhost' ) > -1 ) {
+			console.log(window.location.host.indexOf( 'localhost' ) > -1 );
+			document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.9.6.js'><\/script>".replace("HOST", location.hostname));
+		}
+		//]]>
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.wrap {
+	@include outer-container;
+	position: relative;
+	padding-left: $app-box-pad/2;
+	padding-right: $app-box-pad/2;
+
+	@include media($app-tablet) {
+		padding: 0;
+	}
+}
+
+article,
+header,
+main,
+footer {
+	> section {
+		@extend .wrap;
+	}
+
+	&.dark,
+	.dark {
+		color: $app-color-text-light;
+		background-color: $app-color-text;
+	}
+	&.medium,
+	.medium {
+		background-color: $app-color-box;
+	}
+	&.light,
+	.light {
+		background-color: $app-color-white;
+	}
+}
+
+article {
+	> header {
+		@extend .wrap;
+	}
+}
+
+
+// HEADER
+
+
+
+// MAIN
+
+
+
+// FOOTER
